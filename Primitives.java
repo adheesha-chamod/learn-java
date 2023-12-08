@@ -34,22 +34,22 @@ public class Primitives {
 
 
         // max and min values
-        System.out.println("Min value of byte: " + Byte.MIN_VALUE);
-        System.out.println("Max value of byte: " + Byte.MAX_VALUE);
+        System.out.println("Min value of byte: " + Byte.MIN_VALUE);     // Byte -> wrapper class for byte
+        System.out.println("Max value of byte: " + Byte.MAX_VALUE); 
         
-        System.out.println("Min value of short: " + Short.MIN_VALUE);
+        System.out.println("Min value of short: " + Short.MIN_VALUE);   // Short -> wrapper class for short
         System.out.println("Max value of short: " + Short.MAX_VALUE);
 
-        System.out.println("Min value of int: " + Integer.MIN_VALUE);
+        System.out.println("Min value of int: " + Integer.MIN_VALUE);   // Integer -> wrapper class for int
         System.out.println("Max value of int: " + Integer.MAX_VALUE);
 
-        System.out.println("Min value of long: " + Long.MIN_VALUE);
+        System.out.println("Min value of long: " + Long.MIN_VALUE);     // Long -> wrapper class for long
         System.out.println("Max value of long: " + Long.MAX_VALUE);
 
-        System.out.println("Min value of float: " + Float.MIN_VALUE);
+        System.out.println("Min value of float: " + Float.MIN_VALUE);   // Float -> wrapper class for float
         System.out.println("Max value of float: " + Float.MAX_VALUE);
 
-        System.out.println("Min value of double: " + Double.MIN_VALUE);
+        System.out.println("Min value of double: " + Double.MIN_VALUE); // Double -> wrapper class for double
         System.out.println("Max value of double: " + Double.MAX_VALUE);
     }
 }
