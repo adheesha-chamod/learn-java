@@ -7,9 +7,11 @@ public class FlowControl {
             System.out.println("a is greater than b - 1");
         System.out.println("This line will execute - 1");
 
+
         // ternary operator
         String ans =  (a > b) ? "a is greater than b - 2" : "b is greater than a - 2";
         System.out.println(ans);
+
 
         // switch
         char ch = 'i';
@@ -21,6 +23,17 @@ public class FlowControl {
             case 'e':
                 System.out.println("Vowel - e");
                 break;
+            case 'i':
+                System.out.println("Vowel - i");
+                // break;
+            case 'o':
+                System.out.println("Vowel - i or o");
+                break;
+            case 'u':
+                System.out.println("Vowel - u");
+                break;
+            default:
+                System.out.println("Not a vowel");
         }
     }
 }
