@@ -6,6 +6,11 @@ public class Car {
     // public static final int MAX_SPEED = 100;    // static public constant variable
     public static int MAX_SPEED = 100;        // static public variable
 
+    /*
+     * by default,
+     *  - all classes are public in Java
+     *  - all constructors are public in Java
+     */
     public Car() {
         speed = 0;
         gasoline = 0;
