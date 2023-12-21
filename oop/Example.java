@@ -18,16 +18,39 @@ public class Example {
          * In this case, it is public, so it can be accessed from outside the class
          */
         System.out.println("Max speed: " + Car.MAX_SPEED);
-        
-        System.out.println("Car 1 Speed: " + car1.getSpeed());
-        System.out.println("Car 1 Gasoline: " + car1.getGasoline());
-        System.out.println("Car 1 Is engine on: " + car1.getEngineStatus());
-        System.out.println("Car 1 Is violate speed limit: " + car1.isViolateSpeedLimit());
 
-        System.out.println("Car 2 Speed: " + car2.getSpeed());
-        System.out.println("Car 2 Gasoline: " + car2.getGasoline());
-        System.out.println("Car 2 Is engine on: " + car2.getEngineStatus());
-        System.out.println("Car 2 Is violate speed limit: " + car2.isViolateSpeedLimit());
+        // int[] arr = new int[1, 2, 3, 4, 5];      // error
+        // Car[] cars = new Car[car1, car2];        // error
+
+        // int[] arr = {1, 2, 3, 4, 5};             // correct
+        // Car[] cars = {car1, car2};               // correct
+
+        // int[] arr = new int[]{1, 2, 3, 4, 5};    // correct
+        Car[] cars = new Car[]{car1, car2};         // correct
+
+        for(Car car : cars) {
+            String carName = "Car 1";
+
+            if(car == car2) {
+                carName = "Car 2";
+            }
+
+            System.out.println(carName + " Speed: " + car.getSpeed());
+            System.out.println(carName + " Gasoline: " + car.getGasoline());
+            System.out.println(carName + " Is engine on: " + car.getEngineStatus());
+            System.out.println(carName + " Is violate speed limit: " + car.isViolateSpeedLimit() + "\n");
+
+            /*
+             * instead of println, we can use printf like in C
+             * %s: string
+             * %d: integer
+             * %f: float
+             * %b: boolean
+             * %c: char
+             * %n: new line
+             * ...
+             */
+        }        
 
         Car.MAX_SPEED = 250;
         System.out.println("Now, max speed: " + Car.MAX_SPEED);
