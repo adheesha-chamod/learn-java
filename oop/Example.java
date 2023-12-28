@@ -17,7 +17,7 @@ public class Example {
          * So, accessing static variable from an object is not recommended (it is possible, but not recommended)
          * In this case, it is public, so it can be accessed from outside the class
          */
-        System.out.println("Max speed: " + Car.MAX_SPEED);
+        System.out.println("Max speed: " + Car.MAX_SPEED + "\n");
 
         // int[] arr = new int[1, 2, 3, 4, 5];      // error
         // Car[] cars = new Car[car1, car2];        // error
