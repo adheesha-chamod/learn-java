@@ -4,7 +4,7 @@ public class Car {
     private boolean engineState;
 
     // public static final int MAX_SPEED = 100;    // static public constant variable
-    public static int MAX_SPEED = 100;        // static public variable
+    public static int MAX_SPEED = 100;             // static public variable
 
     /*
      * by default,
