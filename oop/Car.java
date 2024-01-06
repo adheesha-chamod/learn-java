@@ -3,18 +3,25 @@ public class Car {
     private int gasoline;
     private boolean engineState;
 
-    // public static final int MAX_SPEED = 100;    // static public constant variable
-    public static int MAX_SPEED = 100;             // static public variable
-
+    // public static final int MAX_SPEED = 100;    // static public constant variable | normally constant variable is written in uppercase
+    public static int MAX_SPEED = 100;              // static public variable
     /*
      * by default,
      *  - all classes are public in Java
      *  - all constructors are public in Java
      */
     public Car() {
-        speed = 0;
-        gasoline = 0;
-        engineState = false;
+        /* setting default values */
+
+        /* don't use this method */
+        // speed = 0;
+        // gasoline = 0;
+        // engineState = false;
+
+        /* use this method */
+        setSpeed(0);
+        setGasoline(0);
+        setEngineStatus(false);
     }
 
     public void setSpeed(int speed) {
